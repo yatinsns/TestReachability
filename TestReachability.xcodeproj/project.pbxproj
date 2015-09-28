@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42B11FAC7C5A585728A70B05 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D985FED0BA2492FEA7AC672 /* libPods.a */; };
 		80B407DF1BB66EC600F6309E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B407DE1BB66EC600F6309E /* main.m */; };
 		80B407E21BB66EC600F6309E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B407E11BB66EC600F6309E /* AppDelegate.m */; };
 		80B407E51BB66EC600F6309E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B407E41BB66EC600F6309E /* ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E85DA922E7590C8EF13E966 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		57F9E24F0585F7AADDB69CF3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		80B407D91BB66EC600F6309E /* TestReachability.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestReachability.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B407DD1BB66EC600F6309E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80B407DE1BB66EC600F6309E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,7 @@
 		80B407F21BB66EC600F6309E /* TestReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B407F71BB66EC600F6309E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80B407F81BB66EC600F6309E /* TestReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestReachabilityTests.m; sourceTree = "<group>"; };
+		9D985FED0BA2492FEA7AC672 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42B11FAC7C5A585728A70B05 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3F24C5DB2F20AABF963271C6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				57F9E24F0585F7AADDB69CF3 /* Pods.debug.xcconfig */,
+				0E85DA922E7590C8EF13E966 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		80B407D01BB66EC600F6309E = {
 			isa = PBXGroup;
 			children = (
 				80B407DB1BB66EC600F6309E /* TestReachability */,
 				80B407F51BB66EC600F6309E /* TestReachabilityTests */,
 				80B407DA1BB66EC600F6309E /* Products */,
+				3F24C5DB2F20AABF963271C6 /* Pods */,
+				8727E4A39C6BCD9B5C8C76E2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +135,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		8727E4A39C6BCD9B5C8C76E2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D985FED0BA2492FEA7AC672 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +150,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80B407FC1BB66EC600F6309E /* Build configuration list for PBXNativeTarget "TestReachability" */;
 			buildPhases = (
+				4D7B7819611F7C4E707A12DC /* Check Pods Manifest.lock */,
 				80B407D51BB66EC600F6309E /* Sources */,
 				80B407D61BB66EC600F6309E /* Frameworks */,
 				80B407D71BB66EC600F6309E /* Resources */,
+				53F0322AA8B3FDE0E5533442 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,6 +239,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4D7B7819611F7C4E707A12DC /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53F0322AA8B3FDE0E5533442 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		80B407D51BB66EC600F6309E /* Sources */ = {
@@ -347,6 +406,7 @@
 		};
 		80B407FD1BB66EC600F6309E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57F9E24F0585F7AADDB69CF3 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestReachability/Info.plist;
@@ -357,6 +417,7 @@
 		};
 		80B407FE1BB66EC600F6309E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E85DA922E7590C8EF13E966 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TestReachability/Info.plist;
@@ -418,6 +479,7 @@
 				80B407FE1BB66EC600F6309E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		80B407FF1BB66EC600F6309E /* Build configuration list for PBXNativeTarget "TestReachabilityTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +488,7 @@
 				80B408011BB66EC600F6309E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
