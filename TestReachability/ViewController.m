@@ -8,7 +8,15 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+typedef NS_ENUM(NSUInteger, ReachabilityState) {
+  ReachabilityStateUnreachable,
+  ReachabilityStateReachable
+};
+
+@interface ViewController () <UITabBarDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *reachabilityWithInternetConnectionStatus;
+@property (weak, nonatomic) IBOutlet UILabel *reachabilityWithHostnameStatus;
 
 @end
 
@@ -16,12 +24,30 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+  [self updateStatusLabel:self.reachabilityWithInternetConnectionStatus
+    withReachabilityState:ReachabilityStateUnreachable];
+  [self updateStatusLabel:self.reachabilityWithHostnameStatus
+    withReachabilityState:ReachabilityStateReachable];
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (void)updateStatusLabel:(UILabel *)statusLabel
+    withReachabilityState:(ReachabilityState)reachabilityState {
+  switch (reachabilityState) {
+    case ReachabilityStateUnreachable:
+      [self updateLabel:statusLabel withText:@"Unreachable" textColor:[UIColor redColor]];
+      break;
+      
+    case ReachabilityStateReachable:
+      [self updateLabel:statusLabel withText:@"Reachable" textColor:[UIColor greenColor]];
+      break;
+  }
+}
+
+- (void)updateLabel:(UILabel *)label
+           withText:(NSString *)text
+          textColor:(UIColor *)textColor {
+  label.text = text;
+  label.textColor = textColor;
 }
 
 @end
