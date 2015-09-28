@@ -8,14 +8,18 @@
 
 #import "ViewController.h"
 #import <Reachability.h>
+#import <GCNetworkReachability/GCNetworkReachability.h>
 
 @interface ViewController () <UITabBarDelegate>
 
-@property (weak, nonatomic) IBOutlet UILabel *reachabilityWithInternetConnectionStatus;
+@property (weak, nonatomic) IBOutlet UILabel *reachabilityForInternetConnectionStatus;
 @property (weak, nonatomic) IBOutlet UILabel *reachabilityWithHostnameStatus;
+@property (weak, nonatomic) IBOutlet UILabel *gcReachabilityForInternetConnectionStatus;
 
-@property (nonatomic) Reachability *reachabilityWithInternetConnection;
+@property (nonatomic) Reachability *reachabilityForInternetConnection;
 @property (nonatomic) Reachability *reachabilityWithHostname;
+
+@property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnection;
 
 @end
 
@@ -24,29 +28,45 @@
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self != nil) {
-    _reachabilityWithInternetConnection = [Reachability reachabilityForInternetConnection];
+    _reachabilityForInternetConnection = [Reachability reachabilityForInternetConnection];
     _reachabilityWithHostname = [Reachability reachabilityWithHostName:@"www.flock1212.org"];
     
     [_reachabilityWithHostname startNotifier];
-    [_reachabilityWithInternetConnection startNotifier];
+    [_reachabilityForInternetConnection startNotifier];
+    
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reachabilityDidChangeNotification:)
                                                  name:kReachabilityChangedNotification
                                                object:nil];
+    
+    _gcReachabilityForInternetConnection = [GCNetworkReachability reachabilityForInternetConnection];
+    [_gcReachabilityForInternetConnection startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
+      [self updateGCReachabilityStatusLabels];
+    }];
   }
   return self;
 }
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  [self updateStatusLabels];
+  [self updateAllStatusLabels];
 }
 
-- (void)updateStatusLabels {
-  [self updateStatusLabel:self.reachabilityWithInternetConnectionStatus
-              isReachable:[self.reachabilityWithInternetConnection isReachable]];
+- (void)updateAllStatusLabels {
+  [self updateReachabilityStatusLabels];
+  [self updateGCReachabilityStatusLabels];
+}
+
+- (void)updateReachabilityStatusLabels {
+  [self updateStatusLabel:self.reachabilityForInternetConnectionStatus
+              isReachable:[self.reachabilityForInternetConnection isReachable]];
   [self updateStatusLabel:self.reachabilityWithHostnameStatus
               isReachable:[self.reachabilityWithHostname isReachable]];
+}
+
+- (void)updateGCReachabilityStatusLabels {
+  [self updateStatusLabel:self.gcReachabilityForInternetConnectionStatus
+              isReachable:[self.gcReachabilityForInternetConnection isReachable]];
 }
 
 - (void)updateStatusLabel:(UILabel *)statusLabel isReachable:(BOOL)isReachable {
@@ -65,7 +85,10 @@
 }
 
 - (void)reachabilityDidChangeNotification:(NSNotification *)notification {
-  [self updateStatusLabels];
+  [self updateStatusLabel:self.reachabilityForInternetConnectionStatus
+              isReachable:[self.reachabilityForInternetConnection isReachable]];
+  [self updateStatusLabel:self.reachabilityWithHostnameStatus
+              isReachable:[self.reachabilityWithHostname isReachable]];
 }
 
 @end

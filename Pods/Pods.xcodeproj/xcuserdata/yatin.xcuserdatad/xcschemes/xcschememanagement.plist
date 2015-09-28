@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>GCNetworkReachability.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0BDC2D5FC5DFA54ED91B318568E0DB7</key>
+		<key>8B459A38AC888756983333AA256ED1ED</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C0575230547C730823430A499A8EB5A1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
