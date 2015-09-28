@@ -10,6 +10,7 @@
 #import <Reachability.h>
 #import <GCNetworkReachability/GCNetworkReachability.h>
 #import <netinet6/in6.h>
+#import "TDTReachability.h"
 
 @interface ViewController () <UITabBarDelegate>
 
@@ -17,12 +18,15 @@
 @property (weak, nonatomic) IBOutlet UILabel *reachabilityWithHostnameStatus;
 @property (weak, nonatomic) IBOutlet UILabel *gcReachabilityForInternetConnectionStatus;
 @property (weak, nonatomic) IBOutlet UILabel *gcReachabilityForInternetConnectionIPv6OnlyStatus;
+@property (weak, nonatomic) IBOutlet UILabel *tdtReachabilityStatus;
 
 @property (nonatomic) Reachability *reachabilityForInternetConnection;
 @property (nonatomic) Reachability *reachabilityWithHostname;
 
 @property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnection;
 @property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnectionIPv6Only;
+
+@property (nonatomic) TDTReachability *tdtReachability;
 
 @end
 
@@ -51,6 +55,12 @@
     [_gcReachabilityForInternetConnectionIPv6Only startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
       [self updateGCReachabilityStatusLabels];
     }];
+    
+    _tdtReachability = [TDTReachability reachabilityForInternetConnection];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(tdtReachabilityDidChangeNotification:)
+                                                 name:TDTReachabilityDidChangeNotification
+                                               object:_tdtReachability];
   }
   return self;
 }
@@ -63,6 +73,7 @@
 - (void)updateAllStatusLabels {
   [self updateReachabilityStatusLabels];
   [self updateGCReachabilityStatusLabels];
+  [self updateTDTReachabilityStatusLabel];
 }
 
 - (void)updateReachabilityStatusLabels {
@@ -77,6 +88,11 @@
               isReachable:[self.gcReachabilityForInternetConnection isReachable]];
   [self updateStatusLabel:self.gcReachabilityForInternetConnectionIPv6OnlyStatus
               isReachable:[self.gcReachabilityForInternetConnectionIPv6Only isReachable]];
+}
+
+- (void)updateTDTReachabilityStatusLabel {
+  [self updateStatusLabel:self.tdtReachabilityStatus
+              isReachable:[self.tdtReachability isReachable]];
 }
 
 - (void)updateStatusLabel:(UILabel *)statusLabel isReachable:(BOOL)isReachable {
@@ -95,10 +111,11 @@
 }
 
 - (void)reachabilityDidChangeNotification:(NSNotification *)notification {
-  [self updateStatusLabel:self.reachabilityForInternetConnectionStatus
-              isReachable:[self.reachabilityForInternetConnection isReachable]];
-  [self updateStatusLabel:self.reachabilityWithHostnameStatus
-              isReachable:[self.reachabilityWithHostname isReachable]];
+  [self updateReachabilityStatusLabels];
+}
+
+- (void)tdtReachabilityDidChangeNotification:(NSNotification *)notification {
+  [self updateTDTReachabilityStatusLabel];
 }
 
 @end
