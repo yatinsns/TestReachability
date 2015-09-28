@@ -7,39 +7,53 @@
 //
 
 #import "ViewController.h"
-
-typedef NS_ENUM(NSUInteger, ReachabilityState) {
-  ReachabilityStateUnreachable,
-  ReachabilityStateReachable
-};
+#import <Reachability.h>
 
 @interface ViewController () <UITabBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *reachabilityWithInternetConnectionStatus;
 @property (weak, nonatomic) IBOutlet UILabel *reachabilityWithHostnameStatus;
 
+@property (nonatomic) Reachability *reachabilityWithInternetConnection;
+@property (nonatomic) Reachability *reachabilityWithHostname;
+
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  [self updateStatusLabel:self.reachabilityWithInternetConnectionStatus
-    withReachabilityState:ReachabilityStateUnreachable];
-  [self updateStatusLabel:self.reachabilityWithHostnameStatus
-    withReachabilityState:ReachabilityStateReachable];
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+  self = [super initWithCoder:aDecoder];
+  if (self != nil) {
+    _reachabilityWithInternetConnection = [Reachability reachabilityForInternetConnection];
+    _reachabilityWithHostname = [Reachability reachabilityWithHostName:@"www.flock1212.org"];
+    
+    [_reachabilityWithHostname startNotifier];
+    [_reachabilityWithInternetConnection startNotifier];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reachabilityDidChangeNotification:)
+                                                 name:kReachabilityChangedNotification
+                                               object:nil];
+  }
+  return self;
 }
 
-- (void)updateStatusLabel:(UILabel *)statusLabel
-    withReachabilityState:(ReachabilityState)reachabilityState {
-  switch (reachabilityState) {
-    case ReachabilityStateUnreachable:
-      [self updateLabel:statusLabel withText:@"Unreachable" textColor:[UIColor redColor]];
-      break;
-      
-    case ReachabilityStateReachable:
-      [self updateLabel:statusLabel withText:@"Reachable" textColor:[UIColor greenColor]];
-      break;
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  [self updateStatusLabels];
+}
+
+- (void)updateStatusLabels {
+  [self updateStatusLabel:self.reachabilityWithInternetConnectionStatus
+              isReachable:[self.reachabilityWithInternetConnection isReachable]];
+  [self updateStatusLabel:self.reachabilityWithHostnameStatus
+              isReachable:[self.reachabilityWithHostname isReachable]];
+}
+
+- (void)updateStatusLabel:(UILabel *)statusLabel isReachable:(BOOL)isReachable {
+  if (isReachable) {
+    [self updateLabel:statusLabel withText:@"Reachable" textColor:[UIColor greenColor]];
+  } else {
+    [self updateLabel:statusLabel withText:@"Unreachable" textColor:[UIColor redColor]];
   }
 }
 
@@ -48,6 +62,10 @@ typedef NS_ENUM(NSUInteger, ReachabilityState) {
           textColor:(UIColor *)textColor {
   label.text = text;
   label.textColor = textColor;
+}
+
+- (void)reachabilityDidChangeNotification:(NSNotification *)notification {
+  [self updateStatusLabels];
 }
 
 @end
