@@ -9,17 +9,20 @@
 #import "ViewController.h"
 #import <Reachability.h>
 #import <GCNetworkReachability/GCNetworkReachability.h>
+#import <netinet6/in6.h>
 
 @interface ViewController () <UITabBarDelegate>
 
 @property (weak, nonatomic) IBOutlet UILabel *reachabilityForInternetConnectionStatus;
 @property (weak, nonatomic) IBOutlet UILabel *reachabilityWithHostnameStatus;
 @property (weak, nonatomic) IBOutlet UILabel *gcReachabilityForInternetConnectionStatus;
+@property (weak, nonatomic) IBOutlet UILabel *gcReachabilityForInternetConnectionIPv6OnlyStatus;
 
 @property (nonatomic) Reachability *reachabilityForInternetConnection;
 @property (nonatomic) Reachability *reachabilityWithHostname;
 
 @property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnection;
+@property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnectionIPv6Only;
 
 @end
 
@@ -29,7 +32,7 @@
   self = [super initWithCoder:aDecoder];
   if (self != nil) {
     _reachabilityForInternetConnection = [Reachability reachabilityForInternetConnection];
-    _reachabilityWithHostname = [Reachability reachabilityWithHostName:@"www.flock1212.org"];
+    _reachabilityWithHostname = [Reachability reachabilityWithHostName:@"www.flock.co"];
     
     [_reachabilityWithHostname startNotifier];
     [_reachabilityForInternetConnection startNotifier];
@@ -41,6 +44,11 @@
     
     _gcReachabilityForInternetConnection = [GCNetworkReachability reachabilityForInternetConnection];
     [_gcReachabilityForInternetConnection startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
+      [self updateGCReachabilityStatusLabels];
+    }];
+    
+    _gcReachabilityForInternetConnectionIPv6Only = [GCNetworkReachability reachabilityWithIPv6Address:in6addr_any];
+    [_gcReachabilityForInternetConnectionIPv6Only startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
       [self updateGCReachabilityStatusLabels];
     }];
   }
@@ -67,6 +75,8 @@
 - (void)updateGCReachabilityStatusLabels {
   [self updateStatusLabel:self.gcReachabilityForInternetConnectionStatus
               isReachable:[self.gcReachabilityForInternetConnection isReachable]];
+  [self updateStatusLabel:self.gcReachabilityForInternetConnectionIPv6OnlyStatus
+              isReachable:[self.gcReachabilityForInternetConnectionIPv6Only isReachable]];
 }
 
 - (void)updateStatusLabel:(UILabel *)statusLabel isReachable:(BOOL)isReachable {
