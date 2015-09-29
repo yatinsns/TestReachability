@@ -10,7 +10,7 @@
 #import <Reachability.h>
 #import <GCNetworkReachability/GCNetworkReachability.h>
 #import <netinet6/in6.h>
-#import "TDTReachability.h"
+#import "RIVANetworkReachability.h"
 
 @interface ViewController () <UITabBarDelegate>
 
@@ -26,7 +26,7 @@
 @property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnection;
 @property (nonatomic) GCNetworkReachability *gcReachabilityForInternetConnectionIPv6Only;
 
-@property (nonatomic) TDTReachability *tdtReachability;
+@property (nonatomic) RIVANetworkReachability *tdtReachability;
 
 @end
 
@@ -44,7 +44,11 @@
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(reachabilityDidChangeNotification:)
                                                  name:kReachabilityChangedNotification
-                                               object:nil];
+                                               object:_reachabilityWithHostname];
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(reachabilityDidChangeNotification:)
+                                                 name:kReachabilityChangedNotification
+                                               object:_reachabilityForInternetConnection];
     
     _gcReachabilityForInternetConnection = [GCNetworkReachability reachabilityForInternetConnection];
     [_gcReachabilityForInternetConnection startMonitoringNetworkReachabilityWithHandler:^(GCNetworkReachabilityStatus status) {
@@ -56,11 +60,12 @@
       [self updateGCReachabilityStatusLabels];
     }];
     
-    _tdtReachability = [TDTReachability reachabilityForInternetConnection];
+    _tdtReachability = [RIVANetworkReachability reachabilityForInternetConnection];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(tdtReachabilityDidChangeNotification:)
-                                                 name:TDTReachabilityDidChangeNotification
+                                                 name:RIVANetworkReachabilityDidChangeNotification
                                                object:_tdtReachability];
+    [_tdtReachability startNotifier];
   }
   return self;
 }
