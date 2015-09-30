@@ -64,18 +64,16 @@ NSString *const RIVANetworkReachabilityDidChangeNotification = @"TDTReachability
 }
 
 - (void)updateReachablilityStatus {
-  self.reachable = [self.reachabilityIPv4 isReachable] || [self.reachabilityIPv6 isReachable];
+  dispatch_async(dispatch_get_main_queue(), ^{
+    self.reachable = [self.reachabilityIPv4 isReachable] || [self.reachabilityIPv6 isReachable];
+  });
 }
 
 - (void)setReachable:(BOOL)reachable {
   if (_reachable != reachable) {
     _reachable = reachable;
-    
-    // This makes sure the change notification happens on the MAIN THREAD.
-    dispatch_async(dispatch_get_main_queue(), ^{
-      [[NSNotificationCenter defaultCenter] postNotificationName:RIVANetworkReachabilityDidChangeNotification
-                                                          object:self];
-    });
+    [[NSNotificationCenter defaultCenter] postNotificationName:RIVANetworkReachabilityDidChangeNotification
+                                                        object:self];
   }
 }
 
