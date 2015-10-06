@@ -15,8 +15,6 @@
 		80B407EA1BB66EC600F6309E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80B407E91BB66EC600F6309E /* Images.xcassets */; };
 		80B407ED1BB66EC600F6309E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80B407EB1BB66EC600F6309E /* LaunchScreen.xib */; };
 		80B407F91BB66EC600F6309E /* TestReachabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B407F81BB66EC600F6309E /* TestReachabilityTests.m */; };
-		80DE474A1BB939CE00D005F1 /* RIVANetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DE47491BB939CE00D005F1 /* RIVANetworkReachability.m */; };
-		80DE474D1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DE474C1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +43,6 @@
 		80B407F21BB66EC600F6309E /* TestReachabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestReachabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B407F71BB66EC600F6309E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		80B407F81BB66EC600F6309E /* TestReachabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestReachabilityTests.m; sourceTree = "<group>"; };
-		80DE47481BB939CE00D005F1 /* RIVANetworkReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RIVANetworkReachability.h; sourceTree = "<group>"; };
-		80DE47491BB939CE00D005F1 /* RIVANetworkReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RIVANetworkReachability.m; sourceTree = "<group>"; };
-		80DE474B1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Reachability+RIVAIPv6Additions.h"; sourceTree = "<group>"; };
-		80DE474C1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Reachability+RIVAIPv6Additions.m"; sourceTree = "<group>"; };
 		9D985FED0BA2492FEA7AC672 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -110,11 +104,7 @@
 				80B407E61BB66EC600F6309E /* Main.storyboard */,
 				80B407E91BB66EC600F6309E /* Images.xcassets */,
 				80B407EB1BB66EC600F6309E /* LaunchScreen.xib */,
-				80DE47481BB939CE00D005F1 /* RIVANetworkReachability.h */,
-				80DE47491BB939CE00D005F1 /* RIVANetworkReachability.m */,
 				80B407DC1BB66EC600F6309E /* Supporting Files */,
-				80DE474B1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.h */,
-				80DE474C1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.m */,
 			);
 			path = TestReachability;
 			sourceTree = "<group>";
@@ -289,8 +279,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80B407E51BB66EC600F6309E /* ViewController.m in Sources */,
-				80DE474D1BBA79B700D005F1 /* Reachability+RIVAIPv6Additions.m in Sources */,
-				80DE474A1BB939CE00D005F1 /* RIVANetworkReachability.m in Sources */,
 				80B407E21BB66EC600F6309E /* AppDelegate.m in Sources */,
 				80B407DF1BB66EC600F6309E /* main.m in Sources */,
 			);
