@@ -1,13 +1,21 @@
 PODS:
   - GCNetworkReachability (1.3.2)
   - Reachability (3.2)
+  - RIVANetworkReachability (0.1.0):
+    - Reachability (~> 3.1)
 
 DEPENDENCIES:
   - GCNetworkReachability
   - Reachability
+  - RIVANetworkReachability (from `~/directi/RIVANetworkReachability`)
+
+EXTERNAL SOURCES:
+  RIVANetworkReachability:
+    :path: "~/directi/RIVANetworkReachability"
 
 SPEC CHECKSUMS:
   GCNetworkReachability: 2a7dd53d362220326b3e38df68c91b3ef84418d1
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  RIVANetworkReachability: b5c8b64920695a5a24a4b1a5b8a92963dcac8a61
 
 COCOAPODS: 0.38.2

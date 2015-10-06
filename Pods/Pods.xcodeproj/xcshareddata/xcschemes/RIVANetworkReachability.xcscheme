@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2E90BD7E16586D1835A1FF9A"
-               BuildableName = "libGCNetworkReachability.a"
-               BlueprintName = "GCNetworkReachability"
+               BlueprintIdentifier = "16550AE77E4424F40326D53D"
+               BuildableName = "libRIVANetworkReachability.a"
+               BlueprintName = "RIVANetworkReachability"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

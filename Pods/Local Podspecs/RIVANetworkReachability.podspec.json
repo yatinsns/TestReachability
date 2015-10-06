@@ -1,0 +1,25 @@
+{
+  "name": "RIVANetworkReachability",
+  "version": "0.1.0",
+  "summary": "Network reachability detector for iOS.",
+  "homepage": "https://github.com/talk-to/RIVANetworkReachability",
+  "license": "BSD 3-clause License.",
+  "authors": {
+    "Yatin Sarbalia": "yatinsns@gmail.com"
+  },
+  "source": {
+    "git": "git@github.com:talk-to/RIVANetworkReachability.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "RIVANetworkReachability/*.{h,m}",
+  "public_header_files": "RIVANetworkReachability/*.h",
+  "dependencies": {
+    "Reachability": [
+      "~> 3.1"
+    ]
+  }
+}

@@ -10,7 +10,7 @@
 #import <Reachability.h>
 #import <GCNetworkReachability/GCNetworkReachability.h>
 #import <netinet6/in6.h>
-#import "RIVANetworkReachability.h"
+#import <RIVANetworkReachability/RIVANetworkReachability.h>
 
 @interface ViewController () <UITabBarDelegate>
 

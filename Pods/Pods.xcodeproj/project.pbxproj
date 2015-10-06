@@ -7,79 +7,99 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		31076700A0B705F12DB4B96232EA6434 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C49864B71A2BAB8C388FCD6DEEC7B45C /* Pods-dummy.m */; };
+		012DF9CA3E606AF7640307D418085363 /* GCNetworkReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CBCAF83E8AA3A0BD116D9CB09557FA03 /* GCNetworkReachability-dummy.m */; };
+		14BD4D7751B2721DC1121DA4D6D337EC /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E7D4518B240B74D38942226406D75 /* GCNetworkReachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1F5674009529671CD0891F2D92229715 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		21260EDA1077A178E74A51A3A0DA477F /* RIVANetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = EF982B8805AB2C868B7FF68ED4CE773D /* RIVANetworkReachability.h */; };
+		2D5249ACDC51313F896E95B550FD922F /* RIVANetworkReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A8DAD8927E1A4F0DE219D63C31D5A12B /* RIVANetworkReachability-dummy.m */; };
+		33B45BA0D769DFF02FDEC4B45B69F9C6 /* Reachability+RIVAAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = F449B5D52A7DB90D1B121060CEBD322F /* Reachability+RIVAAdditions.h */; };
+		3F01BF871598FEAC422C665AE68C0560 /* GCNetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 5010EF08251D7C6B28F9834787568D11 /* GCNetworkReachability.h */; };
 		3F91DCC662E951F685676CB8F0A29F69 /* Reachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DE4AAC77BE5A338FE5587D3BEEC4867 /* Reachability-dummy.m */; };
 		43E9D203B103ACEC0E9F9D669D18AEDA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
-		587598F4E8F8123436DB3C594A457B69 /* GCNetworkReachability-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 882270AE0509F943325320D2976B7980 /* GCNetworkReachability-dummy.m */; };
 		5A35EB338EB2F46A81ED945CD8673D52 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 771061FB5D22A6166731D5E0F1927C88 /* Reachability.m */; };
-		664E03F0E9FED1798AC06E3F9D92E81D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
-		7FEA975B714A73FCC3719FEA21DDEB3F /* GCNetworkReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 38AC7812CF2AFE6F85749D2C11DC4F44 /* GCNetworkReachability.h */; };
-		8B71AA0F68140F8F9D3A44D139834E55 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */; };
-		8E5C1BC4A35294CC9681D4E5547B5B33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
-		8F2B158E0AF5B58745C4B165218F84E4 /* GCNetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2570D1406B79D558A031D23594121658 /* GCNetworkReachability.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		5BF85C14C4578C45EB92AC9418905944 /* Reachability+RIVAAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 140BC64216CABFB5482636E5C6A79177 /* Reachability+RIVAAdditions.m */; };
+		61A45F309C533AC38AD54998098C9978 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		6D17C07B00DAAF9957CF51B711044DDA /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */; };
 		9930C7DDAD17C7F56DDFCAC316F89E3C /* Reachability.h in Headers */ = {isa = PBXBuildFile; fileRef = F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */; };
+		9D0BE8FBF66790E73F6E48486776D6BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3811A1ECE30883476F114E42572826EF /* Foundation.framework */; };
+		BA67F4B61FB3D36D02695B13823A30EF /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F6D8ACCF68EC9C791318301745A2FDC /* Pods-dummy.m */; };
+		DFBE156D5D8AA4DDA4EBDDF01CD704B4 /* RIVANetworkReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = FF61EF7F7E8F203E2B3E095C1965A001 /* RIVANetworkReachability.m */; };
 		E9A3EFDA08F79DD651E72FD1F20B9335 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		01E27812742A4B9C555802F40FC1D8A4 /* PBXContainerItemProxy */ = {
+		1E7E383F9CDC03A85ABFE32205008599 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 1893DE70459B9C5430E1E53597BF9817;
 			remoteInfo = Reachability;
 		};
-		5E8BC8AB39873ACAE002EC8F38DFFCA8 /* PBXContainerItemProxy */ = {
+		6375B89F8A04E8134F26284F501FE46C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8B459A38AC888756983333AA256ED1ED;
+			remoteGlobalIDString = 1893DE70459B9C5430E1E53597BF9817;
+			remoteInfo = Reachability;
+		};
+		A5B48419369ECA08B3F3EDC9B6F502AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE0CE98FFB9D440D34F6785B6F9CE52A;
+			remoteInfo = RIVANetworkReachability;
+		};
+		F4C3DD416BBE83F56E81AA550D0574BD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4D736B00EA65FE9D463ADF6D7A10840;
 			remoteInfo = GCNetworkReachability;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D61CD56974FF0F80354D8756B060E8 /* libRIVANetworkReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRIVANetworkReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F6D8ACCF68EC9C791318301745A2FDC /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		140BC64216CABFB5482636E5C6A79177 /* Reachability+RIVAAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability+RIVAAdditions.m"; sourceTree = "<group>"; };
 		15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1DA040200AC1136DF7C7BBE1BFBEA4DF /* GCNetworkReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GCNetworkReachability-prefix.pch"; sourceTree = "<group>"; };
-		2570D1406B79D558A031D23594121658 /* GCNetworkReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
 		2DE4AAC77BE5A338FE5587D3BEEC4867 /* Reachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Reachability-dummy.m"; sourceTree = "<group>"; };
+		3010085E33B024B51EED0AB14A2114D5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		368721B16795AFD00D090CFC020EB5EE /* RIVANetworkReachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RIVANetworkReachability-prefix.pch"; sourceTree = "<group>"; };
 		3811A1ECE30883476F114E42572826EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		38AC7812CF2AFE6F85749D2C11DC4F44 /* GCNetworkReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
-		48E7C70A9BFF8A97CD465CC20FDE5A1A /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
-		58E5B5410213A689D8095298A6EAC87E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		3E077D1A6F6F332FF95E3954F4F3738B /* RIVANetworkReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RIVANetworkReachability.xcconfig; sourceTree = "<group>"; };
+		43D43CC3EBDF73FEFD12C90611D23E97 /* RIVANetworkReachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RIVANetworkReachability-Private.xcconfig"; sourceTree = "<group>"; };
+		5010EF08251D7C6B28F9834787568D11 /* GCNetworkReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GCNetworkReachability.h; sourceTree = "<group>"; };
+		5126CBF31175AED71D4180018CAED13D /* GCNetworkReachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GCNetworkReachability-Private.xcconfig"; sourceTree = "<group>"; };
 		641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
 		6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E5439F6B8CAA2E6A1B3E907D5AFE56 /* GCNetworkReachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GCNetworkReachability.xcconfig; sourceTree = "<group>"; };
 		6AF6F694EAB57934FC72F005130D8FB7 /* Reachability-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability-prefix.pch"; sourceTree = "<group>"; };
-		76BC7430D6084C5DE71F39C94FAB4A1A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D9E7D4518B240B74D38942226406D75 /* GCNetworkReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GCNetworkReachability.m; sourceTree = "<group>"; };
 		771061FB5D22A6166731D5E0F1927C88 /* Reachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
-		882270AE0509F943325320D2976B7980 /* GCNetworkReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCNetworkReachability-dummy.m"; sourceTree = "<group>"; };
+		94CD560E9849081B335165FB72A987DE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A8DAD8927E1A4F0DE219D63C31D5A12B /* RIVANetworkReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RIVANetworkReachability-dummy.m"; sourceTree = "<group>"; };
 		B85ED38FD9B5E36B2B0D652825F7A507 /* Reachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Reachability-Private.xcconfig"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
-		C49864B71A2BAB8C388FCD6DEEC7B45C /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		CBCAF83E8AA3A0BD116D9CB09557FA03 /* GCNetworkReachability-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GCNetworkReachability-dummy.m"; sourceTree = "<group>"; };
 		D140D8295BD0FB7CF6AF1D0EF01B8E73 /* Reachability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Reachability.xcconfig; sourceTree = "<group>"; };
-		D734E6D98BE9B97B6199926FE1579CEF /* GCNetworkReachability-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "GCNetworkReachability-Private.xcconfig"; sourceTree = "<group>"; };
-		DB1890E4713AC40A215EA176C8359976 /* libGCNetworkReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGCNetworkReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4F25F202CC465D044B0AFE3399BE2A0 /* libGCNetworkReachability.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGCNetworkReachability.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8539F3144D00F88E54592611D77F8F1 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF982B8805AB2C868B7FF68ED4CE773D /* RIVANetworkReachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RIVANetworkReachability.h; sourceTree = "<group>"; };
 		F136FD8C750979A98D6312CE8ECA1506 /* Reachability.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		F30DA52C60D8B42F372B933D296828FD /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F449B5D52A7DB90D1B121060CEBD322F /* Reachability+RIVAAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Reachability+RIVAAdditions.h"; sourceTree = "<group>"; };
+		FF61EF7F7E8F203E2B3E095C1965A001 /* RIVANetworkReachability.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RIVANetworkReachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1DDBEF0A221B34286CF90010F360FF1E /* Frameworks */ = {
+		7B4ACB63558CC211813258CE2C693B8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				664E03F0E9FED1798AC06E3F9D92E81D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1EEEFC6ECF1DC81F6F9FF547D7DAB20E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8E5C1BC4A35294CC9681D4E5547B5B33 /* Foundation.framework in Frameworks */,
-				8B71AA0F68140F8F9D3A44D139834E55 /* SystemConfiguration.framework in Frameworks */,
+				61A45F309C533AC38AD54998098C9978 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,17 +112,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		92A249BD00C6163E5D77593F9F63341C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F5674009529671CD0891F2D92229715 /* Foundation.framework in Frameworks */,
+				6D17C07B00DAAF9957CF51B711044DDA /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D28CB4E4F8AB062DBC753C451D04FB32 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D0BE8FBF66790E73F6E48486776D6BA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		256AE4AE4BD3B4E06CD0E23C76EF105F /* GCNetworkReachability */ = {
 			isa = PBXGroup;
 			children = (
-				38AC7812CF2AFE6F85749D2C11DC4F44 /* GCNetworkReachability.h */,
-				2570D1406B79D558A031D23594121658 /* GCNetworkReachability.m */,
+				5010EF08251D7C6B28F9834787568D11 /* GCNetworkReachability.h */,
+				6D9E7D4518B240B74D38942226406D75 /* GCNetworkReachability.m */,
 				E3BB0B6DF441859837941593FFDC32B4 /* Support Files */,
 			);
 			path = GCNetworkReachability;
+			sourceTree = "<group>";
+		};
+		403F7781D2D37A5FE22277FBF19D601B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E66AA50FCA7BDCFD7370023CD01537B7 /* RIVANetworkReachability */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
@@ -136,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				403F7781D2D37A5FE22277FBF19D601B /* Development Pods */,
 				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				4F9FEA21C79B860ACF8F91FDF52F951B /* Pods */,
 				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
@@ -143,25 +189,49 @@
 			);
 			sourceTree = "<group>";
 		};
+		7DD51A101672A2E698111A70D57C18D5 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E077D1A6F6F332FF95E3954F4F3738B /* RIVANetworkReachability.xcconfig */,
+				43D43CC3EBDF73FEFD12C90611D23E97 /* RIVANetworkReachability-Private.xcconfig */,
+				A8DAD8927E1A4F0DE219D63C31D5A12B /* RIVANetworkReachability-dummy.m */,
+				368721B16795AFD00D090CFC020EB5EE /* RIVANetworkReachability-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../../projects/TestReachability/Pods/Target Support Files/RIVANetworkReachability";
+			sourceTree = "<group>";
+		};
 		952EEBFAF8F7E620423C9F156F25A506 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				15A529C27057E4A57D259CBC6E6CE49C /* Pods-acknowledgements.markdown */,
 				BF59BC15D23E1E1912C8F334E7236813 /* Pods-acknowledgements.plist */,
-				C49864B71A2BAB8C388FCD6DEEC7B45C /* Pods-dummy.m */,
+				0F6D8ACCF68EC9C791318301745A2FDC /* Pods-dummy.m */,
 				641AE05DD55E5E6AC1590CD7B4A18F97 /* Pods-resources.sh */,
-				58E5B5410213A689D8095298A6EAC87E /* Pods.debug.xcconfig */,
-				48E7C70A9BFF8A97CD465CC20FDE5A1A /* Pods.release.xcconfig */,
+				3010085E33B024B51EED0AB14A2114D5 /* Pods.debug.xcconfig */,
+				94CD560E9849081B335165FB72A987DE /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			path = "Target Support Files/Pods";
 			sourceTree = "<group>";
 		};
+		994EF0E480D5D6A11E1FFE981FEB2E9E /* RIVANetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				EF982B8805AB2C868B7FF68ED4CE773D /* RIVANetworkReachability.h */,
+				FF61EF7F7E8F203E2B3E095C1965A001 /* RIVANetworkReachability.m */,
+				F449B5D52A7DB90D1B121060CEBD322F /* Reachability+RIVAAdditions.h */,
+				140BC64216CABFB5482636E5C6A79177 /* Reachability+RIVAAdditions.m */,
+			);
+			path = RIVANetworkReachability;
+			sourceTree = "<group>";
+		};
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DB1890E4713AC40A215EA176C8359976 /* libGCNetworkReachability.a */,
-				76BC7430D6084C5DE71F39C94FAB4A1A /* libPods.a */,
+				D4F25F202CC465D044B0AFE3399BE2A0 /* libGCNetworkReachability.a */,
+				E8539F3144D00F88E54592611D77F8F1 /* libPods.a */,
+				09D61CD56974FF0F80354D8756B060E8 /* libRIVANetworkReachability.a */,
 				6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */,
 			);
 			name = Products;
@@ -179,13 +249,23 @@
 			isa = PBXGroup;
 			children = (
 				69E5439F6B8CAA2E6A1B3E907D5AFE56 /* GCNetworkReachability.xcconfig */,
-				D734E6D98BE9B97B6199926FE1579CEF /* GCNetworkReachability-Private.xcconfig */,
-				882270AE0509F943325320D2976B7980 /* GCNetworkReachability-dummy.m */,
+				5126CBF31175AED71D4180018CAED13D /* GCNetworkReachability-Private.xcconfig */,
+				CBCAF83E8AA3A0BD116D9CB09557FA03 /* GCNetworkReachability-dummy.m */,
 				1DA040200AC1136DF7C7BBE1BFBEA4DF /* GCNetworkReachability-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/GCNetworkReachability";
 			sourceTree = "<group>";
+		};
+		E66AA50FCA7BDCFD7370023CD01537B7 /* RIVANetworkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				994EF0E480D5D6A11E1FFE981FEB2E9E /* RIVANetworkReachability */,
+				7DD51A101672A2E698111A70D57C18D5 /* Support Files */,
+			);
+			name = RIVANetworkReachability;
+			path = /Users/yatin/directi/RIVANetworkReachability;
+			sourceTree = "<absolute>";
 		};
 		F503DF018D74684DA445791C76E5F4F5 /* Support Files */ = {
 			isa = PBXGroup;
@@ -211,11 +291,20 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		95FAC1AC0AF8D0E83BBBD80E17231E25 /* Headers */ = {
+		235D204695FC4ED02E3733E7A81E1D8C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FEA975B714A73FCC3719FEA21DDEB3F /* GCNetworkReachability.h in Headers */,
+				3F01BF871598FEAC422C665AE68C0560 /* GCNetworkReachability.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6849249D2BACFD670703674CDBC7B59F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21260EDA1077A178E74A51A3A0DA477F /* RIVANetworkReachability.h in Headers */,
+				33B45BA0D769DFF02FDEC4B45B69F9C6 /* Reachability+RIVAAdditions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,13 +336,50 @@
 			productReference = 6569601CFF094BF7A8C021D1F9AE8FDB /* libReachability.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		8B459A38AC888756983333AA256ED1ED /* GCNetworkReachability */ = {
+		2FB57B35FAE234A6AF7BC7895D94BC5C /* Pods */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 289E986FF4783F77D3FD2D00D72D2E75 /* Build configuration list for PBXNativeTarget "GCNetworkReachability" */;
+			buildConfigurationList = 771DA7CC0D20F1EF6C0014E22782CB91 /* Build configuration list for PBXNativeTarget "Pods" */;
 			buildPhases = (
-				8B533EEBC109DFC514D35D4A98B26D88 /* Sources */,
-				1EEEFC6ECF1DC81F6F9FF547D7DAB20E /* Frameworks */,
-				95FAC1AC0AF8D0E83BBBD80E17231E25 /* Headers */,
+				92A9088B99329EBF7B6D9F8BD37C3DE6 /* Sources */,
+				7B4ACB63558CC211813258CE2C693B8F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				344DB5F92352F15520F3700B0A41D88B /* PBXTargetDependency */,
+				17171E3A24E9842CF583725164594FA6 /* PBXTargetDependency */,
+				5B7DC49B40E99826D3BA1B85DF1A7DB5 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = E8539F3144D00F88E54592611D77F8F1 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		AE0CE98FFB9D440D34F6785B6F9CE52A /* RIVANetworkReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09E3E018CF180EB8745BA57839513250 /* Build configuration list for PBXNativeTarget "RIVANetworkReachability" */;
+			buildPhases = (
+				DF47CC6CE1E950F50D7959B78FF4EA6E /* Sources */,
+				D28CB4E4F8AB062DBC753C451D04FB32 /* Frameworks */,
+				6849249D2BACFD670703674CDBC7B59F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				099BF7648EE5B19AA09B455C639EC80F /* PBXTargetDependency */,
+			);
+			name = RIVANetworkReachability;
+			productName = RIVANetworkReachability;
+			productReference = 09D61CD56974FF0F80354D8756B060E8 /* libRIVANetworkReachability.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B4D736B00EA65FE9D463ADF6D7A10840 /* GCNetworkReachability */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EAFBCA798B601871EFCA3BB53824A4A0 /* Build configuration list for PBXNativeTarget "GCNetworkReachability" */;
+			buildPhases = (
+				FF6791DF0F527B640BB1FF596179D0BB /* Sources */,
+				92A249BD00C6163E5D77593F9F63341C /* Frameworks */,
+				235D204695FC4ED02E3733E7A81E1D8C /* Headers */,
 			);
 			buildRules = (
 			);
@@ -261,25 +387,7 @@
 			);
 			name = GCNetworkReachability;
 			productName = GCNetworkReachability;
-			productReference = DB1890E4713AC40A215EA176C8359976 /* libGCNetworkReachability.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		C0575230547C730823430A499A8EB5A1 /* Pods */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 40A02F2F5BD5D72CEAD93753ABE2C983 /* Build configuration list for PBXNativeTarget "Pods" */;
-			buildPhases = (
-				379564BC30FB5AAC7608FD2256DB1785 /* Sources */,
-				1DDBEF0A221B34286CF90010F360FF1E /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C7595ECA2A607AF55074F8CB88A37B62 /* PBXTargetDependency */,
-				93EFC6EE412CC3EDF475A61E1FA8F446 /* PBXTargetDependency */,
-			);
-			name = Pods;
-			productName = Pods;
-			productReference = 76BC7430D6084C5DE71F39C94FAB4A1A /* libPods.a */;
+			productReference = D4F25F202CC465D044B0AFE3399BE2A0 /* libGCNetworkReachability.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -303,8 +411,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8B459A38AC888756983333AA256ED1ED /* GCNetworkReachability */,
-				C0575230547C730823430A499A8EB5A1 /* Pods */,
+				B4D736B00EA65FE9D463ADF6D7A10840 /* GCNetworkReachability */,
+				2FB57B35FAE234A6AF7BC7895D94BC5C /* Pods */,
+				AE0CE98FFB9D440D34F6785B6F9CE52A /* RIVANetworkReachability */,
 				1893DE70459B9C5430E1E53597BF9817 /* Reachability */,
 			);
 		};
@@ -320,41 +429,79 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		379564BC30FB5AAC7608FD2256DB1785 /* Sources */ = {
+		92A9088B99329EBF7B6D9F8BD37C3DE6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31076700A0B705F12DB4B96232EA6434 /* Pods-dummy.m in Sources */,
+				BA67F4B61FB3D36D02695B13823A30EF /* Pods-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8B533EEBC109DFC514D35D4A98B26D88 /* Sources */ = {
+		DF47CC6CE1E950F50D7959B78FF4EA6E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				587598F4E8F8123436DB3C594A457B69 /* GCNetworkReachability-dummy.m in Sources */,
-				8F2B158E0AF5B58745C4B165218F84E4 /* GCNetworkReachability.m in Sources */,
+				2D5249ACDC51313F896E95B550FD922F /* RIVANetworkReachability-dummy.m in Sources */,
+				DFBE156D5D8AA4DDA4EBDDF01CD704B4 /* RIVANetworkReachability.m in Sources */,
+				5BF85C14C4578C45EB92AC9418905944 /* Reachability+RIVAAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF6791DF0F527B640BB1FF596179D0BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012DF9CA3E606AF7640307D418085363 /* GCNetworkReachability-dummy.m in Sources */,
+				14BD4D7751B2721DC1121DA4D6D337EC /* GCNetworkReachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		93EFC6EE412CC3EDF475A61E1FA8F446 /* PBXTargetDependency */ = {
+		099BF7648EE5B19AA09B455C639EC80F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Reachability;
 			target = 1893DE70459B9C5430E1E53597BF9817 /* Reachability */;
-			targetProxy = 01E27812742A4B9C555802F40FC1D8A4 /* PBXContainerItemProxy */;
+			targetProxy = 1E7E383F9CDC03A85ABFE32205008599 /* PBXContainerItemProxy */;
 		};
-		C7595ECA2A607AF55074F8CB88A37B62 /* PBXTargetDependency */ = {
+		17171E3A24E9842CF583725164594FA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RIVANetworkReachability;
+			target = AE0CE98FFB9D440D34F6785B6F9CE52A /* RIVANetworkReachability */;
+			targetProxy = A5B48419369ECA08B3F3EDC9B6F502AE /* PBXContainerItemProxy */;
+		};
+		344DB5F92352F15520F3700B0A41D88B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = GCNetworkReachability;
-			target = 8B459A38AC888756983333AA256ED1ED /* GCNetworkReachability */;
-			targetProxy = 5E8BC8AB39873ACAE002EC8F38DFFCA8 /* PBXContainerItemProxy */;
+			target = B4D736B00EA65FE9D463ADF6D7A10840 /* GCNetworkReachability */;
+			targetProxy = F4C3DD416BBE83F56E81AA550D0574BD /* PBXContainerItemProxy */;
+		};
+		5B7DC49B40E99826D3BA1B85DF1A7DB5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Reachability;
+			target = 1893DE70459B9C5430E1E53597BF9817 /* Reachability */;
+			targetProxy = 6375B89F8A04E8134F26284F501FE46C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		086A6074112902F54063181ACDBA8F72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94CD560E9849081B335165FB72A987DE /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		16D09A540905AD7A7CE16C0402E50FEE /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B85ED38FD9B5E36B2B0D652825F7A507 /* Reachability-Private.xcconfig */;
@@ -371,21 +518,37 @@
 			};
 			name = Release;
 		};
-		458E2FCA2D2DFE38BE371FB8F0E68D4D /* Debug */ = {
+		1720CE3DAEAF814DD25AFA4CC7C26DA2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D734E6D98BE9B97B6199926FE1579CEF /* GCNetworkReachability-Private.xcconfig */;
+			baseConfigurationReference = 3010085E33B024B51EED0AB14A2114D5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/GCNetworkReachability/GCNetworkReachability-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3FA50A827BF7710F3EF4703608DFEC31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 43D43CC3EBDF73FEFD12C90611D23E97 /* RIVANetworkReachability-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RIVANetworkReachability/RIVANetworkReachability-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
+			name = Release;
 		};
 		612DB466C3152C1F6973F0B4D71AF2D6 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -403,21 +566,21 @@
 			};
 			name = Debug;
 		};
-		6FE325CB0E925AD76B940F2A8FA2A7CB /* Release */ = {
+		9AE6351FDFAEF8DA66DBFBD6A1ABF94D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 48E7C70A9BFF8A97CD465CC20FDE5A1A /* Pods.release.xcconfig */;
+			baseConfigurationReference = 5126CBF31175AED71D4180018CAED13D /* GCNetworkReachability-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/GCNetworkReachability/GCNetworkReachability-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Release;
+			name = Debug;
 		};
 		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -458,9 +621,9 @@
 			};
 			name = Debug;
 		};
-		C93500763D31F6397A7F6A8548FB93AD /* Release */ = {
+		B20D1ED7DF272310804BFE40056BCDE8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D734E6D98BE9B97B6199926FE1579CEF /* GCNetworkReachability-Private.xcconfig */;
+			baseConfigurationReference = 5126CBF31175AED71D4180018CAED13D /* GCNetworkReachability-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/GCNetworkReachability/GCNetworkReachability-prefix.pch";
@@ -474,16 +637,16 @@
 			};
 			name = Release;
 		};
-		E444E4E7A2A351B518729CAC0E4CEB6A /* Debug */ = {
+		EF3572D0E5E09CA7BFE32B1E98D69993 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58E5B5410213A689D8095298A6EAC87E /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 43D43CC3EBDF73FEFD12C90611D23E97 /* RIVANetworkReachability-Private.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RIVANetworkReachability/RIVANetworkReachability-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -527,11 +690,11 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		289E986FF4783F77D3FD2D00D72D2E75 /* Build configuration list for PBXNativeTarget "GCNetworkReachability" */ = {
+		09E3E018CF180EB8745BA57839513250 /* Build configuration list for PBXNativeTarget "RIVANetworkReachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				458E2FCA2D2DFE38BE371FB8F0E68D4D /* Debug */,
-				C93500763D31F6397A7F6A8548FB93AD /* Release */,
+				EF3572D0E5E09CA7BFE32B1E98D69993 /* Debug */,
+				3FA50A827BF7710F3EF4703608DFEC31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -545,20 +708,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		40A02F2F5BD5D72CEAD93753ABE2C983 /* Build configuration list for PBXNativeTarget "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				E444E4E7A2A351B518729CAC0E4CEB6A /* Debug */,
-				6FE325CB0E925AD76B940F2A8FA2A7CB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		7308906685EEDEACADE55318549938F7 /* Build configuration list for PBXNativeTarget "Reachability" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				612DB466C3152C1F6973F0B4D71AF2D6 /* Debug */,
 				16D09A540905AD7A7CE16C0402E50FEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771DA7CC0D20F1EF6C0014E22782CB91 /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1720CE3DAEAF814DD25AFA4CC7C26DA2 /* Debug */,
+				086A6074112902F54063181ACDBA8F72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EAFBCA798B601871EFCA3BB53824A4A0 /* Build configuration list for PBXNativeTarget "GCNetworkReachability" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE6351FDFAEF8DA66DBFBD6A1ABF94D /* Debug */,
+				B20D1ED7DF272310804BFE40056BCDE8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
